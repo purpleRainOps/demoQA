@@ -1,0 +1,14 @@
+{
+    "validateFormSuccessfull":{
+        "fullName":"alejandro",
+        "email":"alejandro@gmail.com",
+        "currentAddress":"calle 123",
+        "permanentAddress":"calle 123"
+    },
+    "validateFormErrors":{
+        "fullName":"alejandro",
+        "email":"alejandro",
+        "currentAddress":"calle 123",
+        "permanentAddress":"calle 123"
+    }
+}
