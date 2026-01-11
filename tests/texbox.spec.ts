@@ -12,10 +12,10 @@ let textBoxPage: TextBox;
 test.beforeEach(async ({ page }) => {
     homePage = new Home(page);
     menuPage = new Menu(page);
-    textBoxPage = new TextBox(page);
 });
 
 test('Navigate to texbox and validate form successful', async ({ page }) => {
+    textBoxPage = new TextBox(page);
     await homePage.navigateToHomePage(page);
     await homePage.navigateToElements(homePage.elementsButton);
     await menuPage.navigateToElementMenu(menuPage.texboxButton);
@@ -24,6 +24,7 @@ test('Navigate to texbox and validate form successful', async ({ page }) => {
 });
 
 test('Navigate to texbox and validate form errors', async ({ page }) => {
+    textBoxPage = new TextBox(page);
     await homePage.navigateToHomePage(page);
     await homePage.navigateToElements(homePage.elementsButton);
     await menuPage.navigateToElementMenu(menuPage.texboxButton);
