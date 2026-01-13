@@ -10,13 +10,13 @@ let radioButtonPage:RadioButton;
 test.beforeEach(async ({page})=>{
     homePage = new Home(page);
     menuPage = new Menu(page);
-})
-
-test('Navigate to radiobutton and validate yes', async ({page})=>{
     radioButtonPage = new RadioButton(page);
     await homePage.navigateToHomePage(page);
     await homePage.navigateToElements(homePage.elementsButton);
     await menuPage.navigateToElementMenu(menuPage.radioButton);
+})
+
+test('Navigate to radiobutton and validate yes', async ({page})=>{
     await radioButtonPage.checkRadioButton(radioButtonPage.yesRadioButton);
     await radioButtonPage.validateRadioButtonMessage("Yes");
 })
