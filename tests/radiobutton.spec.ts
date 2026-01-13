@@ -18,5 +18,5 @@ test('Navigate to radiobutton and validate yes', async ({page})=>{
     await homePage.navigateToElements(homePage.elementsButton);
     await menuPage.navigateToElementMenu(menuPage.radioButton);
     await radioButtonPage.checkRadioButton(radioButtonPage.yesRadioButton);
-    await radioButtonPage.validateRadioButtonMessage("no");
+    await radioButtonPage.validateRadioButtonMessage("Yes");
 })

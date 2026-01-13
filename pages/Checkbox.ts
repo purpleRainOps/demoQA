@@ -7,7 +7,7 @@ export class Checkbox {
     public readonly footer: Locator;
 
     constructor(page: Page) {
-        this.homeCheckbox = page.locator('//label[@for="tree-node-home"]')
+        this.homeCheckbox = page.locator('//input[@id="tree-node-home"]')
         this.resultMessage = page.locator('//div[@id="result"]');
         this.footer = page.locator('//footer//span[text()="© 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED."]')
     }
